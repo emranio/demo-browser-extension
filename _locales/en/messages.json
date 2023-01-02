@@ -1,0 +1,22 @@
+{
+  "extName": {
+    "message": "Example Chrome Extension",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Browser extension with dozens of interactive demos.",
+    "description": "Extension description"
+  },
+  "actionDescription": {
+    "message": "Opens popup.html",
+    "description": "Popup action description"
+  },
+  "customCommandDescription": {
+    "message": "Runs 'foobar' on the current page",
+    "description": "Custom action description"
+  },
+  "searchEngineName": {
+    "message": "Brave Search Engine",
+    "description": "Search engine override description"
+  }
+}

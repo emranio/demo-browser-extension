@@ -1,0 +1,16 @@
+@import url("./vendor/bootstrap.css");
+@import url("./vendor/fontawesome/css/all.min.css");
+
+body {
+  min-width: 720px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: start center;
+  padding: 1.5rem;
+  gap: 3rem !important;
+  overflow-y: auto;
+}
+
+#content {
+  min-height: 600px;
+}

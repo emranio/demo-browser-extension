@@ -1,0 +1,128 @@
+<div id="header" class="flex flex-row justify-between gap-12">
+  <div class="min-w-max">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      id="dropdownMenuButton1"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Select demo
+    </button>
+
+    <button
+      class="btn btn-outline-secondary"
+      id="reload"
+      data-toggle="tooltip"
+      data-placement="right"
+      title="Reload this extension page"
+    >
+      <i class="fa-solid fa-arrow-rotate-left"></i>
+    </button>
+
+    <a
+      href="#"
+      target="_blank"
+      class="btn btn-outline-secondary"
+      id="newtab"
+      data-toggle="tooltip"
+      data-placement="right"
+      title="Open this page in a new tab"
+    >
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <ul
+      id="dbx-menu"
+      class="dropdown-menu"
+      style="max-height: 360px; overflow-y: auto"
+      aria-labelledby="dropdownMenuButton1"
+    >
+      <!-- DBX_TARGET -->
+    </ul>
+  </div>
+
+  <div class="flex flex-grow flex-col gap-1 items-start text-start">
+    <div id="page-title" class="text-2xl text-blue-400"></div>
+    <div id="page-description" class="text-md text-gray-600"></div>
+  </div>
+</div>
+
+<div
+  id="popup-warning"
+  class="my-4 alert alert-danger hidden flex flex-col gap-2"
+  role="alert"
+>
+  <p>
+    It looks like you've opened this demo in a tab. To work correctly, this demo
+    should be opened as a <strong>popup</strong>:
+  </p>
+
+  <ol class="list-decimal mx-8">
+    <li>
+      Click the extension's toolbar icon (magnifying glass) or type Ctrl+Shift+F
+    </li>
+    <li>Open the <strong>Select demo</strong> dropdown</li>
+    <li>Select <strong data-component-title></strong></li>
+  </ol>
+</div>
+
+<div
+  id="no-popup-warning"
+  class="my-4 alert alert-danger hidden flex flex-col gap-2"
+  role="alert"
+>
+  <p>
+    It looks like you've opened this demo in a popup. To work correctly, this
+    demo should be opened as a <strong>tab</strong>.
+  </p>
+
+  <button data-open-in-tab class="btn btn-primary">OPEN THIS IN A TAB</button>
+</div>
+
+<div
+  id="devtools-warning"
+  class="my-4 alert alert-danger hidden flex flex-col gap-2"
+  role="alert"
+>
+  <p>This demo must be opened in a <strong>devtools panel</strong>.</p>
+
+  <p>
+    Open the browser's developer tools and open a panel or sidebar with "BEX
+    Devtools" in its title.
+  </p>
+</div>
+
+<div
+  id="permitted-scheme-warning"
+  class="my-4 alert alert-danger hidden flex flex-col gap-2"
+  role="alert"
+>
+  <p>
+    It looks like the active tab has an <strong>invalid scheme</strong>. To work
+    correctly, this demo requires the active tab's URL to have a
+    <strong>permitted scheme</strong>.
+  </p>
+
+  <p>Examples of permitted schemes:</p>
+
+  <ul class="list-disc mx-8 font-monospace">
+    <li>http://</li>
+    <li>https://</li>
+    <li>ftp://</li>
+    <li>file:///</li>
+  </ul>
+
+  <p>Examples of invalid schemes:</p>
+
+  <ul class="list-disc mx-8 font-monospace">
+    <li>chrome://</li>
+    <li>chrome-extension://</li>
+  </ul>
+
+  <button
+    data-set-active-tab-url="https://wikipedia.org"
+    class="btn btn-primary"
+  >
+    SET ACTIVE TAB TO A PAGE WITH A PERMITTED SCHEME
+  </button>
+</div>

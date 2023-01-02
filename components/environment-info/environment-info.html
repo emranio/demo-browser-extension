@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="/scripts/vendor/shared.js"></script>
+    <link href="/styles/shared.css" rel="stylesheet" />
+
+    <link href="environment-info.css" rel="stylesheet" />
+    <script src="environment-info.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="card">
+        <pre class="card-header">chrome.runtime.getURL()</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="url"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.runtime.getManifest()</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="manifest"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.runtime.getPlatformInfo()</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="platform-info"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.extension.getViews()</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="views"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.system.cpu</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="system-cpu"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.system.display</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="system-display"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.system.memory</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="system-memory"></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <pre class="card-header">chrome.system.storage</pre>
+        <div class="card-body">
+          <pre class="card-text text-xs" id="system-storage"></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

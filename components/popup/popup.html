@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="/scripts/vendor/shared.js"></script>
+    <link href="/styles/shared.css" rel="stylesheet" />
+
+    <link href="popup.css" rel="stylesheet" />
+    <script src="popup.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="text-center">
+        You can open and close the popup page using the keyboard shortcut
+        Ctrl+Shift+F. This shortcut is defined in the extension manifest.
+      </div>
+
+      <div class="dropdown grid place-items-center">
+        <a
+          class="btn btn-outline-primary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Set default popup page to...
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li>
+            <button id="popup-default" class="dropdown-item">Popup Page</button>
+          </li>
+          <li>
+            <button id="welcome-default" class="dropdown-item">
+              Welcome Page
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

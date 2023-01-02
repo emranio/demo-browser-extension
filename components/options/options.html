@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="/scripts/vendor/shared.js"></script>
+    <link href="/styles/shared.css" rel="stylesheet" />
+
+    <link href="options.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="content">
+      <div class="form-group flex flex-col items-stretch">
+        <button class="btn btn-outline-primary" id="open-options-api">
+          chrome.runtime.openOptionsPage()
+        </button>
+
+        <div class="form-text">
+          Same as selecting `Options` from the toolbar right click menu. The
+          manifest has
+          <span class="font-monospace">options_ui.open_in_tab=false</span>, so
+          this method opens the options page in a modal in the browser extension
+          interface.
+        </div>
+      </div>
+
+      <a
+        class="btn btn-outline-primary"
+        href="/components/options/options.html"
+        target="blank"
+        id="open-options-href"
+      >
+        Open with anchor href
+      </a>
+
+      <button class="btn btn-outline-primary" id="open-options-window-open">
+        Open with window.open()
+      </button>
+    </div>
+
+    <script src="options.js" type="module" defer></script>
+  </body>
+</html>

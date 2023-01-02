@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="/scripts/vendor/shared.js"></script>
+    <link href="/styles/shared.css" rel="stylesheet" />
+
+    <link href="modify-toolbar-icon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="content">
+      <div>
+        <div class="input-group">
+          <input
+            id="tooltip"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Tooltip text"
+          />
+          <button id="tooltip-btn" class="btn btn-outline-primary">
+            Update tooltip text
+          </button>
+        </div>
+
+        <div class="form-text">
+          Update the tooltip text that appears when hovering over the
+          extension's toolbar icon.
+        </div>
+      </div>
+
+      <div>
+        <button
+          id="toolbar-image-random"
+          class="w-full btn btn-outline-primary"
+        >
+          Set icon to random color
+        </button>
+        <div class="form-text">
+          Update the extension's toolbar icon to be a random color square.
+        </div>
+      </div>
+
+      <div>
+        <div class="input-group">
+          <input
+            id="icon-file-input"
+            accept="image/png, image/jpeg"
+            type="file"
+            class="form-control"
+            placeholder="Recipient's username"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button id="toolbar-image-file" class="btn btn-outline-primary">
+            Update icon
+          </button>
+        </div>
+        <div class="form-text">
+          Update the extension's toolbar icon to the selected image file.
+        </div>
+      </div>
+
+      <div>
+        <div class="input-group">
+          <input
+            id="badge"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Badge text"
+          />
+          <button id="badge-text-btn" class="btn btn-outline-primary">
+            Update badge text
+          </button>
+        </div>
+
+        <div class="form-text">
+          Update the badge text that appears over the toolbar icon.
+        </div>
+      </div>
+
+      <div>
+        <button
+          id="toolbar-badge-random"
+          class="w-full btn btn-outline-primary"
+        >
+          Set badge to random color
+        </button>
+        <div class="form-text">
+          Update the extension's badge to be a random color.
+        </div>
+      </div>
+
+      <button id="toolbar-reset" class="w-full btn btn-outline-primary">
+        Reset Toolbar
+      </button>
+    </div>
+
+    <script src="modify-toolbar-icon.js" type="module" defer></script>
+  </body>
+</html>
