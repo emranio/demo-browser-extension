@@ -1,7 +1,7 @@
 import { pagesJson } from "./background/utils.js";
 
 const githubPrefix =
-  "https://github.com/emranio/demo-browser-extension/tree/main/components";
+  "https://github.com/emranio/sample-browser-extension/tree/main/components";
 
 export async function initializeComponent() {
   // Set a random hash on this page
